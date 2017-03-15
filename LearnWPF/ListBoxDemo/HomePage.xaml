@@ -1,0 +1,65 @@
+﻿<Page x:Class="ListBoxDemo.HomePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="600"
+	Title="HomePage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <ListBox Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" Height="200" Margin="0" VerticalAlignment="Top" Width="200">
+            <ListBoxItem Background="AliceBlue">
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="A"></Label>
+                    <Image Source="A.jpg"  Height="20"></Image>
+                </StackPanel>
+            </ListBoxItem>
+            <ListBoxItem Background="AntiqueWhite">
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="B"></Label>
+                    <Image Source="A.jpg"  Height="20"></Image>
+                </StackPanel>
+            </ListBoxItem>
+            <ListBoxItem Background="Aqua">
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="C"></Label>
+                    <Image Source="A.jpg"  Height="20"></Image>
+                </StackPanel>
+            </ListBoxItem>
+            <ListBoxItem Background="Aquamarine">
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="D"></Label>
+                    <Image Source="A.jpg" Height="20"></Image>
+                </StackPanel>
+            </ListBoxItem>
+        </ListBox>
+        <ListBox Grid.Column="1" Grid.Row="0" Width="200">
+            <ListBoxItem Background="Beige">
+                <CheckBox>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="1" Height="18"></Label>
+                        <Image Source="B.jpg" Height="20"></Image>
+                    </StackPanel>
+                </CheckBox>
+            </ListBoxItem>
+            <ListBoxItem>
+                <CheckBox>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="C.jpg" Height="20"></Image>
+                        <TextBlock Text="2" VerticalAlignment="Center"></TextBlock>
+                    </StackPanel>
+                </CheckBox>
+            </ListBoxItem>
+        </ListBox>
+
+
+    </Grid>
+</Page>
