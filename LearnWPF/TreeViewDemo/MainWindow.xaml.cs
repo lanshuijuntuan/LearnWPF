@@ -22,6 +22,33 @@ namespace TreeViewDemo
         public MainWindow()
         {
             InitializeComponent();
+            var station= new Station()
+            {
+                Name = "1",
+                Code = "2",
+                Children = new List<Station>()
+                {
+                    new Station()
+                    {
+                        Code="2",
+                        Name="3"
+                    },
+                    new Station()
+                    {
+                        Code="3",
+                        Name="4"
+                    }
+                }
+            };
+            this.treeview1.ItemsSource = new List<Station>() { station };
         }
+    }
+
+    public class Station
+    {
+        public string Name { get; set; }
+
+        public string Code { get; set; }
+        public List<Station> Children { get; set; }
     }
 }

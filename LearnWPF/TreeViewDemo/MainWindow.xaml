@@ -1,8 +1,32 @@
 ﻿<Window x:Class="TreeViewDemo.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:TreeViewDemo"
         Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <HierarchicalDataTemplate x:Key="treeviewitemTemp" ItemsSource="{Binding Children}">
+            <StackPanel Orientation="Horizontal">
+                <TextBox Text="{Binding Name}"></TextBox>
+                <TextBox Text="{Binding Code}"></TextBox>
+            </StackPanel>
+        </HierarchicalDataTemplate>
+    </Window.Resources>
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TreeView Grid.Column="0">
+            <TreeViewItem Header="456">
+                <TreeViewItem Header="789"></TreeViewItem>
+                <TreeViewItem Header="112">
+                    <TreeViewItem Header="444"></TreeViewItem>
+                </TreeViewItem>
+            </TreeViewItem>
+
+        </TreeView>
+        <TreeView Name="treeview1" Grid.Column="1" ItemTemplate="{StaticResource treeviewitemTemp}">
+            
+        </TreeView>
     </Grid>
 </Window>
