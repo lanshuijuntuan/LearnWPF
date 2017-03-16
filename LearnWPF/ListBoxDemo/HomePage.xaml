@@ -45,16 +45,32 @@
             <ListBoxItem Background="Beige">
                 <CheckBox>
                     <StackPanel Orientation="Horizontal">
-                        <Label Content="1" Height="18"></Label>
                         <Image Source="B.jpg" Height="20"></Image>
+                        <Label Content="1" Height="18"></Label>
                     </StackPanel>
                 </CheckBox>
             </ListBoxItem>
-            <ListBoxItem>
+            <ListBoxItem Background="Azure">
                 <CheckBox>
                     <StackPanel Orientation="Horizontal">
                         <Image Source="C.jpg" Height="20"></Image>
                         <TextBlock Text="2" VerticalAlignment="Center"></TextBlock>
+                    </StackPanel>
+                </CheckBox>
+            </ListBoxItem>
+            <ListBoxItem Background="Beige">
+                <CheckBox IsChecked="True">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="C.jpg" Height="25"></Image>
+                        <TextBlock Text="D"></TextBlock>
+                    </StackPanel>
+                </CheckBox>
+            </ListBoxItem>
+            <ListBoxItem Background="Beige">
+                <CheckBox IsChecked="True">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="C.jpg" Height="25"></Image>
+                        <TextBlock Text="D"></TextBlock>
                     </StackPanel>
                 </CheckBox>
             </ListBoxItem>
