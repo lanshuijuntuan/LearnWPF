@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskDemo", "Task\TaskDemo\T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskDemo.HowToUseContinueWith", "Task\TaskDemo.HowToUseContinueWith\TaskDemo.HowToUseContinueWith.csproj", "{98BAD84D-B57C-49B4-A0DD-1B75D40DD2A4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadPoolDemo", "Task\ThreadPoolDemo\ThreadPoolDemo.csproj", "{B7A9E1C3-D98D-47BC-8E3C-8E37C4E0B365}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{98BAD84D-B57C-49B4-A0DD-1B75D40DD2A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98BAD84D-B57C-49B4-A0DD-1B75D40DD2A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98BAD84D-B57C-49B4-A0DD-1B75D40DD2A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7A9E1C3-D98D-47BC-8E3C-8E37C4E0B365}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7A9E1C3-D98D-47BC-8E3C-8E37C4E0B365}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7A9E1C3-D98D-47BC-8E3C-8E37C4E0B365}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7A9E1C3-D98D-47BC-8E3C-8E37C4E0B365}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -54,5 +60,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{0052670A-6DD3-4CED-81FD-3414BB992E9A} = {10EB8558-6077-4BD4-8F96-24DDC4268B16}
 		{98BAD84D-B57C-49B4-A0DD-1B75D40DD2A4} = {10EB8558-6077-4BD4-8F96-24DDC4268B16}
+		{B7A9E1C3-D98D-47BC-8E3C-8E37C4E0B365} = {10EB8558-6077-4BD4-8F96-24DDC4268B16}
 	EndGlobalSection
 EndGlobal
