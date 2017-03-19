@@ -1,0 +1,26 @@
+﻿<Window x:Class="RadioButtonDemo3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="150" Width="250">
+    <StackPanel Margin="10">
+        <Label FontWeight="Bold">Are you ready?</Label>
+        <RadioButton>
+            <WrapPanel>
+                <Image Source="http://cdn1.iconfinder.com/data/icons/fatcow/16/bullet_green.png" Width="16" Height="16" Margin="0,0,5,0"></Image>
+                <TextBlock Foreground="Green">Yes</TextBlock>
+            </WrapPanel>
+        </RadioButton>
+        <RadioButton>
+            <WrapPanel>
+                <Image Source="http://cdn1.iconfinder.com/data/icons/fatcow/16/bullet_green.png" Width="16" Height="16" Margin="0,0,5,0"></Image>
+                <TextBlock Foreground="Red">No</TextBlock>
+            </WrapPanel>
+        </RadioButton>
+        <RadioButton>
+            <WrapPanel>
+                <Image Source="http://cdn1.iconfinder.com/data/icons/fatcow/16/bullet_green.png" Width="16" Height="16" Margin="0,0,5,0"></Image>
+                <TextBlock Foreground="Gray">Maybe</TextBlock>
+            </WrapPanel>
+        </RadioButton>
+    </StackPanel>
+</Window>
