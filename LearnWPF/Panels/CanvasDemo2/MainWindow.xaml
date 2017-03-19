@@ -1,0 +1,11 @@
+﻿<Window x:Class="CanvasDemo2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="275" Width="260">
+    <Canvas>
+        <Ellipse Fill="Gainsboro" Panel.ZIndex="2" Canvas.Left="25" Canvas.Top="25" Width="200" Height="200"></Ellipse>
+        <Rectangle Fill="LightBlue" Panel.ZIndex="5" Canvas.Left="25" Canvas.Top="25" Width="50" Height="50"></Rectangle>
+        <Rectangle Fill="LightCoral" Panel.ZIndex="4" Canvas.Left="50" Canvas.Top="50" Width="50" Height="50"></Rectangle>
+        <Rectangle Fill="LightCyan" Panel.ZIndex="7" Canvas.Left="75" Canvas.Top="75" Width="50" Height="50"></Rectangle>
+    </Canvas>
+</Window>
