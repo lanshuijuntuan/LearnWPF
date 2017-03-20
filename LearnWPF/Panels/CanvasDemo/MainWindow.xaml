@@ -1,0 +1,12 @@
+﻿<Window x:Class="CanvasDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="200" Width="200">
+    <Canvas>
+        <Button Canvas.Left="10">top left</Button>
+        <Button Canvas.Right="10">top right</Button>
+        <Button Canvas.Left="10" Canvas.Bottom="10">buttom left</Button>
+        <Button Canvas.Right="10" Canvas.Bottom="10">button right</Button>
+
+    </Canvas>
+</Window>
