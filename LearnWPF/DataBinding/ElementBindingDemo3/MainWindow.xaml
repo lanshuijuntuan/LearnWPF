@@ -1,0 +1,18 @@
+﻿<Window x:Class="ElementBindingDemo3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="110" Width="280">
+    <StackPanel Margin="10">
+        <WrapPanel>
+            <TextBlock FontWeight="Bold">窗口名称：</TextBlock>
+            <TextBox Name="txtWindowTitle" Width="120" Text="{Binding Title,UpdateSourceTrigger=Explicit}"></TextBox>
+            <Button Name="btn_update" FontWeight="Bold" Click="btn_update_Click" >更新</Button>
+        </WrapPanel>
+        <WrapPanel Margin="0,10,0,0">
+            <TextBlock FontWeight="Bold">窗体分辨率：</TextBlock>
+            <TextBox Text="{Binding Width,UpdateSourceTrigger=LostFocus}" Width="50"></TextBox>
+            <TextBlock Text=" X " FontWeight="Bold"></TextBlock>
+            <TextBox Text="{Binding Height,UpdateSourceTrigger=PropertyChanged}" Width="50"></TextBox>
+        </WrapPanel>
+    </StackPanel>
+</Window>

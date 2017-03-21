@@ -1,0 +1,15 @@
+﻿<Window x:Class="GridDemo4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="100"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Button>button 1</Button>
+        <Button Grid.Column="1">button 2 test width</Button>
+        <Button Grid.Column="2">button 3 has 100 unit length</Button>
+    </Grid>
+</Window>
