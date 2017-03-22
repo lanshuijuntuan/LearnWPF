@@ -1,0 +1,12 @@
+﻿<Window x:Class="ElementBindingDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="110" Width="280">
+    <StackPanel Margin="10">
+        <TextBox Name="txtvalue"></TextBox>
+        <WrapPanel Margin="0,10">
+            <TextBlock FontWeight="Bold">Value:</TextBlock>
+            <TextBlock Text="{Binding Path=Text, ElementName=txtvalue}"></TextBlock>
+        </WrapPanel>
+    </StackPanel>
+</Window>
