@@ -13,10 +13,10 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace CommandDemo2
+namespace CommandDemo3
 {
     /// <summary>
-    /// MainWindow.xaml 的交互逻辑
+    /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
@@ -27,24 +27,25 @@ namespace CommandDemo2
 
         private void CommandBinding_CanExecute(object sender, CanExecuteRoutedEventArgs e)
         {
-            e.CanExecute = (txtedit != null && txtedit.SelectionLength > 0);
+            e.CanExecute = true;
         }
 
         private void CommandBinding_Executed(object sender, ExecutedRoutedEventArgs e)
         {
-            txtedit.Copy();
+            Application.Current.Shutdown();
         }
+    }
 
-        private void Paste_Executed(object sender, ExecutedRoutedEventArgs e)
-        {
-            txtedit.Paste();
-        }
-
-        private void Paste_CanExecute(object sender, CanExecuteRoutedEventArgs e)
-        {
-            e.CanExecute = Clipboard.ContainsText();
-        }
-
-       
+    public static class CustomCommands
+    {
+        public static readonly RoutedUICommand Exit = new RoutedUICommand(
+            "Exit",
+            "Exit",
+            typeof(CustomCommands),
+            new InputGestureCollection()
+            {
+                new KeyGesture(Key.F4,ModifierKeys.Alt)
+            }
+            );
     }
 }
