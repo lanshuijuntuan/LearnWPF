@@ -1,0 +1,14 @@
+﻿<Window x:Class="ElementBindingDemo6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:system="clr-namespace:System;assembly=mscorlib"
+        Title="MainWindow" Height="150" Width="250" Name="wnd">
+    <StackPanel Margin="10">
+        <TextBlock Text="{Binding ElementName=wnd,Path=ActualWidth,StringFormat=Window Width:{0:#.0}}"></TextBlock>
+        <TextBlock Text="{Binding ElementName=wnd,Path=ActualHeight,StringFormat=Window Height:{0:C}}"></TextBlock>
+        <TextBlock Text="{Binding Source={x:Static system:DateTime.Now},StringFormat=Date:{0:dddd MMMM dd}}"></TextBlock>
+        <TextBlock Text="{Binding Source={x:Static system:DateTime.Now},StringFormat=Time:{0:HH:mm}}"></TextBlock>
+        <TextBlock Text="{Binding Source={x:Static system:DateTime.Now},StringFormat=Japen:{0:D},ConverterCulture='ja-JP'}"></TextBlock>
+        <TextBlock Text="{Binding Source={x:Static system:DateTime.Now},StringFormat=American:{0:D},ConverterCulture='en-US'}"></TextBlock>
+    </StackPanel>
+</Window>

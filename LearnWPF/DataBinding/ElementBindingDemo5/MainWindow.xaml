@@ -1,0 +1,17 @@
+﻿<Window x:Class="ElementBindingDemo5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:ElementBindingDemo5"
+        Title="MainWindow" Height="140" Width="280">
+    <Window.Resources>
+        <local:YesNoConvertToBool x:Key="YesNoConvert"/>
+    </Window.Resources>
+    <StackPanel Margin="10">
+        <TextBox Name="txtName"></TextBox>
+        <WrapPanel Margin="0,10">
+            <TextBlock FontWeight="Bold">当前值是:</TextBlock>
+            <TextBlock Text="{Binding ElementName=txtName, Path=Text,Converter={StaticResource YesNoConvert}}"></TextBlock>
+        </WrapPanel>
+        <CheckBox IsChecked="{Binding ElementName=txtName, Path=Text,Converter={StaticResource YesNoConvert}}">Yes</CheckBox>
+    </StackPanel>
+</Window>
