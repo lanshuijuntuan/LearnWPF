@@ -23,6 +23,7 @@ namespace CanvasDemo2
         public MainWindow()
         {
             InitializeComponent();
+            
         }
     }
 }
