@@ -1,0 +1,18 @@
+﻿<Window x:Class="MessageBoxDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <Style x:Key="buttonStyle" TargetType="Button">
+            <Setter Property="Margin" Value="0,0,0,10"></Setter>
+        </Style>
+    </Window.Resources>
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Button Style="{StaticResource buttonStyle}"  Click="Button_Smiple_Messagebox_Click"> Smiple Messagebox</Button>
+        <Button Style="{StaticResource buttonStyle}" Click="Button_Messagebox_with_title_Click"> Messagebox with title</Button>
+        <Button Style="{StaticResource buttonStyle}" Click="Button_Message_buttons_Click"> Messagebox with buttons</Button>
+        <Button Style="{StaticResource buttonStyle}" Click="button_msg_with_response_click"> Messagebox with responses</Button>
+        <Button Style="{StaticResource buttonStyle}" Click="btn_msg_with_icon"> Messagebox with icon</Button>
+        <Button Style="{StaticResource buttonStyle}" Click="btn_msg_with_default_choice"> Messagebox with deflaut choice</Button>
+    </StackPanel>
+</Window>
