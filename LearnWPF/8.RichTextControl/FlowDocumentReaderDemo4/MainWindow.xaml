@@ -1,11 +1,31 @@
 ﻿<Window x:Class="FlowDocumentReaderDemo4.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:self="clr-namespace:FlowDocumentReaderDemo4"
         Title="MainWindow" Height="350" Width="525">
     <Window.Resources>
-        
+        <x:Array x:Key="users" Type="{x:Type self:User}">
+            <self:User Name="ZhangSan" Age="23"></self:User>
+            <self:User Name="LiSi" Age="24"></self:User>
+        </x:Array>
     </Window.Resources>
     <Grid>
-        
+        <FlowDocumentScrollViewer>
+            <FlowDocument>
+                <Paragraph FontSize="36">Users</Paragraph>
+                <Paragraph FontStyle="Italic" Foreground="Gray" FontSize="14" TextAlignment="Left">Here is a list of users,inside our flowDocuemnt,in a completely interactive listview control</Paragraph>
+                <BlockUIContainer>
+                    <ListView ItemsSource="{StaticResource users}" BorderThickness="0">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}" Width="150"></GridViewColumn>
+                                <GridViewColumn Header="Age" DisplayMemberBinding="{Binding Age}" Width="75"></GridViewColumn>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </BlockUIContainer>
+                <Paragraph FontStyle="Italic" TextAlignment="Left" FontSize="14" Foreground="Gray">More content can go here ...</Paragraph>
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
     </Grid>
 </Window>

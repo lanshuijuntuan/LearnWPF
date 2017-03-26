@@ -1,0 +1,36 @@
+﻿<Window x:Class="RichTextControlDemo3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.CommandBindings>
+        <CommandBinding Command="ApplicationCommands.Open" Executed="Open_Executed"></CommandBinding>
+        <CommandBinding Command="ApplicationCommands.Save" Executed="Save_Executed"></CommandBinding>
+    </Window.CommandBindings>
+    <DockPanel>
+            <ToolBar DockPanel.Dock="Top">
+                <Separator></Separator>
+                <Button Command="Open" Name="btn_open">
+                    <Image Source="http://download.easyicon.net/png/12292/16/" Height="16" Width="16"></Image>
+                </Button>
+                <Button Command="Save" Name="btn_save">
+                    <Image Source="http://download.easyicon.net/png/4650/16/" Height="16" Width="16"></Image>
+                </Button>
+                <ToggleButton Command="EditingCommands.ToggleBold" Name="btn_bold">
+                    <Image Source="http://download.easyicon.net/png/1168896/16/" Height="16" Width="16"></Image>
+                </ToggleButton>
+                <ToggleButton Command="EditingCommands.ToggleItalic" Name="btn_italic">
+                    <Image Source="http://download.easyicon.net/png/1101645/16/" Height="16" Width="16"></Image>
+                </ToggleButton>
+                <ToggleButton Command="EditingCommands.ToggleUnderline" Name="btn_underline">
+                    <Image Source="http://download.easyicon.net/png/1158296/16/" Height="16" Width="16"></Image>
+                </ToggleButton>
+                <Separator></Separator>
+                <ComboBox Name="cbx_fontfamily" Width="150" SelectionChanged="cbx_fontfamily_SelectionChanged"></ComboBox>
+                <ComboBox Name="cbx_fontsize" Width="50" IsEditable="True" TextBoxBase.TextChanged="cbx_fontsize_TextChanged"></ComboBox>
+            </ToolBar>
+        <RichTextBox Name="rtb_edit" SelectionChanged="rtb_edit_SelectionChanged">
+            <FlowDocument></FlowDocument>
+        </RichTextBox>
+        
+    </DockPanel>
+</Window>
