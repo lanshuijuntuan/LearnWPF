@@ -1,0 +1,17 @@
+﻿<Window x:Class="ContextMenuDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Button HorizontalAlignment="Center" VerticalAlignment="Center"> Test ContextMenu
+            <Button.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="MenuItem 1"></MenuItem>
+                    <MenuItem Header="MenuItem 2"></MenuItem>
+                    <Separator></Separator>
+                    <MenuItem Header="MenuItem 3"></MenuItem>
+                </ContextMenu>
+            </Button.ContextMenu>
+        </Button>
+    </Grid>
+</Window>
