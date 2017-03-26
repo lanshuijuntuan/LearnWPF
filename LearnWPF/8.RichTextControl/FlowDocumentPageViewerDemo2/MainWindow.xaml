@@ -1,0 +1,16 @@
+﻿<Window x:Class="FlowDocumentPageViewerDemo2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <DockPanel>
+        <WrapPanel DockPanel.Dock="Top">
+            <Button Name="btnSearch" Click="btnSearch_Click">Search</Button>
+        </WrapPanel>
+        <FlowDocumentPageViewer Name="fdpv_document">
+            <FlowDocument>
+                <Paragraph>.NET Framework (pronounced dot net) is a software framework developed by Microsoft that runs primarily on Microsoft Windows. It includes a large class library named Framework Class Library (FCL) and provides language interoperability (each language can use code written in other languages) across several programming languages. Programs written for .NET Framework execute in a software environment (in contrast to a hardware environment) named Common Language Runtime (CLR), an application virtual machine that provides services such as security, memory management, and exception handling. (As such, computer code written using .NET Framework is called "managed code".) FCL and CLR together constitute .NET Framework.</Paragraph>
+                <Paragraph>FCL provides user interface, data access, database connectivity, cryptography, web application development, numeric algorithms, and network communications. Programmers produce software by combining their source code with .NET Framework and other libraries. The framework is intended to be used by most new applications created for the Windows platform. Microsoft also produces an integrated development environment largely for .NET software called Visual Studio.</Paragraph>
+            </FlowDocument>
+        </FlowDocumentPageViewer>
+    </DockPanel>
+</Window>

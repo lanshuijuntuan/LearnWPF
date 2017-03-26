@@ -1,0 +1,13 @@
+﻿<Window x:Class="FlowDocumentScrollViewerDemo1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <FlowDocumentScrollViewer IsToolBarVisible="True" Zoom="80" ScrollViewer.VerticalScrollBarVisibility="Auto">
+            <FlowDocument>
+                <Paragraph FontSize="36">自我介绍</Paragraph>
+                <Paragraph>大家好，我叫周宏权，来自湖南，2012年毕业之后加入了长沙一家教学设备生产企业，在里面主要从事模拟教学设备软件开发工作，期间参与了公司ATC教学设备模拟软件开发</Paragraph>
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+    </Grid>
+</Window>

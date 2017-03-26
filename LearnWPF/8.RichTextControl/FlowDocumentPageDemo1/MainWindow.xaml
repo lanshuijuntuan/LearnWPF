@@ -1,0 +1,14 @@
+﻿<Window x:Class="FlowDocumentPageDemo1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="300" Width="300">
+    <Grid>
+        <FlowDocumentPageViewer>
+            <FlowDocument ColumnGap="10" ColumnRuleBrush="Aqua" ColumnRuleWidth="5" ColumnWidth="140">
+                <Paragraph>阿尔法，1998年12月2日出生于新疆维吾尔自治区乌鲁木齐市，中国内地男演员、歌手。
+2003年，阿尔法因获得综艺节目《非常6+1》非常明星奖而被人们所关注[1]  。2005年，阿尔法获得《星光大道》年度总决赛亚军、人气冠军奖。2006年5月因主演武侠电影《武当少年》而进入演艺圈[2]  。2009年，参演青少年法制教育短剧《校园少年先锋》。2012年主演微电影《魔法红舞鞋》[3]  。2014年，举办“葫芦岛相约阿尔法全国童星巡回演唱会”[4]</Paragraph>
+                <Paragraph>2005年的时候，阿尔法参加了刚开播的央视王牌节目《星光大道》，凭借帅气的造型，与不俗的歌喉，赢得了评委与观众的喜爱，最终获得《星光大道》年度总决赛亚军、人气冠军奖，正式成为了家喻户晓的童星。2006年主演武侠电影《武当少年》，受到好评，从而进入演艺圈。[5]</Paragraph>
+            </FlowDocument>
+        </FlowDocumentPageViewer>
+    </Grid>
+</Window>

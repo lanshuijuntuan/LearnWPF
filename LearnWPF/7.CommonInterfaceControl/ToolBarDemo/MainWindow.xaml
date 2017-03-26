@@ -1,0 +1,28 @@
+﻿<Window x:Class="ToolBarDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.CommandBindings>
+        <CommandBinding Command="New" CanExecute="New_CanExecuted"></CommandBinding>
+    </Window.CommandBindings>
+    <DockPanel>
+        <ToolBarTray DockPanel.Dock="Top">
+            <ToolBar>
+                <Button Command="New" Name="_New">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/Resources/file_new.png"></Image>
+                        <TextBlock Margin="3,0,0,0">New</TextBlock>
+                    </StackPanel>
+                </Button>
+                <Button Command="Open" Name="_Open">Open</Button>
+                <Button Command="Save" Name="_Save">Save</Button>
+            </ToolBar>
+            <ToolBar>
+                <Button Command="Cut" Name="_Cut">Cut</Button>
+                <Button Command="Copy" Name="_Copy">Copy</Button>
+                <Button Command="Paste" Name="_Paste">Paste</Button>
+            </ToolBar>
+        </ToolBarTray>
+        <TextBox AcceptsReturn="True"></TextBox>
+    </DockPanel>
+</Window>
