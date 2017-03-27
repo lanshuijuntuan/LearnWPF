@@ -1,0 +1,29 @@
+﻿<Window x:Class="WebBrowserControlDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.CommandBindings>
+        <CommandBinding Command="NavigationCommands.BrowseBack" Executed="Back_Executed" CanExecute="CanBack_Executed"></CommandBinding>
+        <CommandBinding Command="NavigationCommands.BrowseForward" Executed="Forward_Executed" CanExecute="CanForward_Executed"></CommandBinding>
+        <CommandBinding Command="NavigationCommands.GoToPage" Executed="Go_Executed"></CommandBinding>
+    </Window.CommandBindings>
+    <DockPanel>
+        <ToolBar DockPanel.Dock="Top">
+            <Separator></Separator>
+            <Button Command="NavigationCommands.BrowseBack">
+                <Image Source="http://download.easyicon.net/png/1205454/16/" Height="16" Width="16"></Image>
+            </Button>
+            <Button Command="NavigationCommands.BrowseForward">
+                <Image Source="http://download.easyicon.net/png/1205488/16/" Height="16" Width="16"></Image>
+            </Button>
+            <Separator></Separator>
+            <TextBox Name="txtUrl" Width="300" KeyUp="TextBox_KeyUp"></TextBox>
+            <Button Command="NavigationCommands.GoToPage">
+                <Image Source="http://download.easyicon.net/png/1186174/16/" Width="16" Height="16"></Image>
+            </Button>
+        </ToolBar>
+        <WebBrowser Name="wbrowser">
+            
+        </WebBrowser>
+    </DockPanel>
+</Window>

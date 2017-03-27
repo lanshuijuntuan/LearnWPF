@@ -1,11 +1,11 @@
-﻿<Window x:Class="BorderDemo1.MainWindow"
+﻿<Window x:Class="BorderDemo3.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="170" Width="200">
+        Title="MainWindow" Height="180" Width="200">
     <Grid Margin="10">
-        <Border Background="GhostWhite" BorderBrush="Gainsboro" BorderThickness="1">
+        <Border Background="GhostWhite" BorderBrush="Blue" BorderThickness="1,3,1,5" CornerRadius="3,3,8,8">
             <StackPanel Margin="10">
-                <Button> button 1</Button>
+                <Button>button 1</Button>
                 <Button Margin="0,10">button 2</Button>
                 <Button>button 3</Button>
             </StackPanel>
