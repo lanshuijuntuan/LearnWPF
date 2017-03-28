@@ -1,0 +1,28 @@
+﻿<Window x:Class="TabControlDemo5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <TabControl TabStripPlacement="Right">
+            <TabControl.Resources>
+                <Style TargetType="{x:Type TabItem}">
+                    <Setter Property="HeaderTemplate">
+                        <Setter.Value>
+                            <DataTemplate>
+                                <ContentPresenter Content="{TemplateBinding Content}">
+                                    <ContentPresenter.LayoutTransform>
+                                        <RotateTransform Angle="90"></RotateTransform>
+                                    </ContentPresenter.LayoutTransform>
+                                </ContentPresenter>
+                            </DataTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Setter Property="Padding" Value="3"></Setter>
+                </Style>
+            </TabControl.Resources>
+            <TabItem Header="General"></TabItem>
+            <TabItem Header="Security"></TabItem>
+            <TabItem Header="Details"></TabItem>
+        </TabControl>
+    </Grid>
+</Window>

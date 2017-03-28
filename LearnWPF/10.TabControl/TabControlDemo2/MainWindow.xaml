@@ -1,0 +1,35 @@
+﻿<Window x:Class="TabControlDemo2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <TabControl>
+            <TabItem>
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="http://download.easyicon.net/png/1113623/16/" Height="16" Width="16"></Image>
+                        <TextBlock>General</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <TextBlock>Contents gose here ......</TextBlock>
+            </TabItem>
+            <TabItem>
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="http://download.easyicon.net/png/1113623/16/" Width="16" Height="16"></Image>
+                        <TextBlock>Security</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                
+            </TabItem>
+            <TabItem>
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="http://download.easyicon.net/png/1113623/16/" Height="16" Width="16"></Image>
+                        <TextBlock>Details</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

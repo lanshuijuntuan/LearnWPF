@@ -1,0 +1,17 @@
+﻿<Window x:Class="TabControlDemo3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <DockPanel>
+        <StackPanel Orientation="Horizontal" DockPanel.Dock="Bottom">
+            <Button Click="pre_click">Pre</Button>
+            <Button Click="next_click">Next</Button>
+            <Button Click="selected_click">Selected</Button>
+        </StackPanel>
+        <TabControl Name="tbSample">
+            <TabItem Header="General"></TabItem>
+            <TabItem Header="Security"></TabItem>
+            <TabItem Header="Details"></TabItem>
+        </TabControl>
+    </DockPanel>
+</Window>
