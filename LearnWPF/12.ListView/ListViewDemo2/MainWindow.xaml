@@ -1,0 +1,27 @@
+﻿<Window x:Class="ListViewDemo2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <ListView>
+            <ListViewItem>
+                <StackPanel Orientation="Horizontal">
+                    <Image Height="16" Width="16" Source="http://download.easyicon.net/png/1205757/16/"></Image>
+                    <TextBlock>C# WinForm</TextBlock>
+                </StackPanel>
+            </ListViewItem>
+            <ListViewItem>
+                <StackPanel Orientation="Horizontal">
+                    <Image Height="16" Width="16" Source="http://download.easyicon.net/png/1205757/16/"></Image>
+                    <TextBlock>WPF Control</TextBlock>
+                </StackPanel>
+            </ListViewItem>
+            <ListViewItem>
+                <StackPanel Orientation="Horizontal">
+                    <Image Height="16" Width="16" Source="http://download.easyicon.net/png/1205757/16/"></Image>
+                    <TextBlock>Entity Framework</TextBlock>
+                </StackPanel>
+            </ListViewItem>
+        </ListView>
+    </Grid>
+</Window>

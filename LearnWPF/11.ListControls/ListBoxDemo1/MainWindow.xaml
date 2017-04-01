@@ -44,5 +44,22 @@
                 </WrapPanel>
             </ListBoxItem>
         </ListBox>
+        
+        <ListBox Grid.Column="0" Grid.Row="1" Name="lst_course" HorizontalContentAlignment="Stretch">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="0,2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="100"></ColumnDefinition>
+                            
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0" Text="{Binding Name}"></TextBlock>
+                        <ProgressBar Grid.Column="1" Value="{Binding Grade}" Maximum="100" Minimum="0"></ProgressBar>
+                    </Grid>
+                    
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
     </Grid>
 </Window>

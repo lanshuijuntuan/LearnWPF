@@ -1,0 +1,30 @@
+﻿<Window x:Class="ComboxDemo1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <ComboBox VerticalAlignment="Center" HorizontalAlignment="Center" Width="100">
+            <ComboBoxItem>WPF</ComboBoxItem>
+            <ComboBoxItem>C#</ComboBoxItem>
+            <ComboBoxItem>WCF</ComboBoxItem>
+        </ComboBox>
+        <ComboBox Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100">
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal">
+                    <Image Height="16" Width="16" Source="http://download.easyicon.net/png/1205757/16/" ></Image>
+                    <TextBlock Margin="10,0,0,0">C# WinForm</TextBlock>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="http://download.easyicon.net/png/1205757/16/" Height="16" Width="16"></Image>
+                    <TextBlock Margin="10,0,0,0">C# WCF</TextBlock>
+                </StackPanel>
+            </ComboBoxItem>
+        </ComboBox>
+    </Grid>
+</Window>

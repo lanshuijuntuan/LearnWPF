@@ -1,0 +1,21 @@
+﻿<Window x:Class="ListViewDemo3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <ListView Name="lstview_person">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <WrapPanel Orientation="Horizontal">
+                        <TextBlock>Name:</TextBlock>
+                        <TextBlock Text="{Binding Name}"></TextBlock>
+                        <TextBlock>Age:</TextBlock>
+                        <TextBlock Text="{Binding Age}"></TextBlock>
+                        <TextBlock>Mail:</TextBlock>
+                        <TextBlock Text="{Binding Mail}"></TextBlock>
+                    </WrapPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</Window>

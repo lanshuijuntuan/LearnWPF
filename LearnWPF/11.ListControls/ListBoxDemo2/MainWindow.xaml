@@ -1,0 +1,29 @@
+﻿<Window x:Class="ListBoxDemo2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="200" Width="300">
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Right" Margin="10">
+            <TextBlock Margin="10">操作列表</TextBlock>
+            <Button Margin="0,5" Click="ShowSelectedItems">选择项</Button>
+            <Button Margin="0,5" Click="GoNextItem">上一个</Button>
+            <Button Margin="0,5" Click="GoBackItem">下一个</Button>
+            <Button Margin="0,5" Click="SelectAllItems">选择所有</Button>
+           
+        </StackPanel>
+        <ListBox Name="lstbooks" HorizontalContentAlignment="Stretch" SelectionMode="Multiple">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="100"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="{Binding Title}"></TextBlock>
+                        <ProgressBar Grid.Column="1" Minimum="0" Maximum="100" Value="{Binding Completetion}"></ProgressBar>
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </DockPanel>
+</Window>

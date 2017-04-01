@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Collections;
+using System.Collections.ObjectModel;
 
 namespace ListBoxDemo1
 {
@@ -23,6 +25,19 @@ namespace ListBoxDemo1
         public MainWindow()
         {
             InitializeComponent();
+            ObservableCollection<Course> lst = new ObservableCollection<Course>();
+            lst.Add(new Course() { Grade = 90, Name = "语文" });
+            lst.Add(new Course() { Grade = 90, Name = "数学" });
+            lst.Add(new Course() { Grade = 80, Name = "体育" });
+            this.lst_course.ItemsSource = lst;
         }
+    }
+
+    public class Course
+    {
+        public string Name { get; set; }
+
+        public int Grade { get; set; }
+       
     }
 }
